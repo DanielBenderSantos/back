@@ -1,10 +1,12 @@
-import mysql from "mysql";
+import mysql from "mysql2";
+import dotenv from "dotenv";
+dotenv.config();
 
-const db = mysql.createPool({
-    host: "192.185.131.60",
-    user: "spudli30_root",
-    password: "Senha@123",
-    database: "spudli30_dbspudlingo"
+const db = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME
 });
 
 export default db;
