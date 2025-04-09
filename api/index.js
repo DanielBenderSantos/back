@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bcrypt from "bcrypt";
-import { createServer } from "@vercel/node";
+import { createServer } from "vercel-express";
 import db from "../src/db.js";
 import formIdiomaRoutes from "../src/form_idioma.js";
 
