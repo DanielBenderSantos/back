@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import db from "../src/db.js";
 import formIdiomaRoutes from "../src/form_idioma.js";
 
